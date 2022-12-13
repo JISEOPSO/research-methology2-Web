@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>시나브로</title>
+        <style>
+            nav ul {
+                width:100%;
+                background-color: rgba(44,42,39,0.983);
+                list-style-type: none;
+                margin:0;
+                padding:0;
+            }
+            nav ul li {
+            display: inline-block;
+        }
+        .home {
+            background-color: darkorange;
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+            float: right;
+        }
+        .home a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 16px 16px;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-menu {
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            display:none;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-menu:hover:not(.home){
+            background-color: green;
+            color: white;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+            padding:10px;
+            background: #f1f1f1;
+        }
+        .header {
+            padding:20px;
+            text-align: center;
+            background: white;
+        }
+        .header h1 {
+            font-size:30px;
+        }
+        .contents:after {
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .fakeimg {
+            background-color: rgb(228,216,216);
+            width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top:20px;
+        }
+        .umm{
+            text-align:center;
+        }
+        .footer {
+            padding: 30px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        @media screen and (max-width:800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        @media screen and (max-width:400px) {
+            nav {
+                display: none;
+            }
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>시나브로</h1>
+            <p> 모르는 사이에 조금씩 천천히 </p>
+            <a href="#"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <div class="dropdown-menu">지역별</div>
+                    <div class="dropdown-content">
+                        <a href="seoul.html"><p>서울특별시</p></a>
+                        <a href="kyunggi.html">경기도</a>
+                        <a href="#">인천광역시</a>
+                        <a href="#">부산광역시</a>
+                        <a href="#">울산광역시</a>
+                        <a href="#">대전광역시</a>
+                        <a href="#">대구광역시</a>
+                        <a href="#">광주광역시</a>
+                        <a href="#">경상남도</a>
+                        <a href="#">경상북도</a>
+                        <a href="#">충청북도</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-menu">난이도별</div>
+                    <div class="dropdown-content">
+                        <a href="very easy.html">매우쉬움</a>
+                        <a href="easy.html">쉬움</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-menu"><a href = "recommend.html">등린이 추천 트랙</a></div>
+                </li>
+            </ul>
+        </nav>
+        <div class="contents">
+            <img src = "main_hike.png">
+            <p class = "umm">어린 시절 산에서 자랐기에 산은 친구이자 놀이터
+            지금까지 산에 기대어 살아왔기에 나는 산의 일부분.
+            산을 오르는 것은 신이 나에게 허락한 운명이라고 생각
+            걸을 힘이 남아있는 동안은 신이 허락하는 한 산을 오를 뿐.
+            산은 오를수록 겁나지만,<br> 죽는다고 해도 포기할 수 없는 산. 등산가는 죽음이 두려워 산을 떠난다면, 존재 이유가 없기 때문이다.</p>
+            <h3 class = "umm">-엄홍길-</h3>
+        </div>
+        <div class="footer">
+            <a href = "main_index"><h2>메인페이지로</h2></a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>시나브로</title>
+        <style>
+            nav ul {
+                width:100%;
+                background-color: rgba(44,42,39,0.983);
+                list-style-type: none;
+                margin:0;
+                padding:0;
+            }
+            nav ul li {
+            display: inline-block;
+        }
+        .home {
+            background-color: darkorange;
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+            float: right;
+        }
+        .home a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 16px 16px;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-menu {
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            display:none;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-menu:hover:not(.home){
+            background-color: green;
+            color: white;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+            padding:10px;
+            background: #f1f1f1;
+        }
+        .header {
+            padding:20px;
+            text-align: center;
+            background: white;
+        }
+        .header h1 {
+            font-size:30px;
+        }
+        .contents:after {
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .leftcolumn {
+            float: left;
+            width:25%;
+        }
+        .rightcolumn {
+            float: left;
+            width: 75%;
+            padding-left:20px;
+        }
+        .fakeimg {
+            background-color: rgb(228,216,216);
+            width: 100%;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top:20px;
+        }
+        .footer {
+            padding: 30px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+        .easy{
+            text-align:left;
+            text-decoration:bold;
+        }
+        @media screen and (max-width:800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        @media screen and (max-width:400px) {
+            nav {
+                display: none;
+            }
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <a href = "main_index.html"><h1>시나브로</h1></a>
+            <p> 모르는 사이에 조금씩 천천히 </p>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <div class="dropdown-menu">지역별</div>
+                    <div class="dropdown-content">
+                        <a href="seoul.html">서울특별시</a>
+                        <a href="kyunggi.html">경기도</a>
+                        <a href="#">인천광역시</a>
+                        <a href="#">부산광역시</a>
+                        <a href="#">울산광역시</a>
+                        <a href="#">대전광역시</a>
+                        <a href="#">대구광역시</a>
+                        <a href="#">광주광역시</a>
+                        <a href="#">경상남도</a>
+                        <a href="#">경상북도</a>
+                        <a href="#">충청북도</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div class="dropdown-menu">난이도별</div>
+                    <div class="dropdown-content">
+                        <a href="very easy.html">매우 쉬움</a>
+                        <a href="easy.html">쉬움</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href = "recommend.html"><div class="dropdown-menu">등린이 추천 트랙</div></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contents">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>회원명</h2>
+                 <img src = "everast.jpg" style = "height:150px;" style = "width:200px;">
+                    <p>SOO YOUNG HYUN</p>
+                </div>
+                <div class="card">
+                    <h2>나의 트랙</h2>
+                    <div class="fakeimg"><p>1. 돌산~삼성산국기대_코스</p></div>
+                    <div class="fakeimg"><p>2. 아차산~삼봉사_코스</p></div>
+                    <div class="fakeimg"><p>3. 개화산입구~개화산약사사_코스</p></div>
+                </div>
+                <div class="card">
+                    <h2>Contact</h2>
+                    <p>010-xxxx-xxxx</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    대한민국 > <a href="kyunggi.html"> 경기도</a>
+                    <h2>구름산~가리대_코스</h2>
+                    <div class="fakeimg" style="height:700px;">
+                        <div class="mountain5-1.html" style = "margin-bottom: 10px;">
+                            <span style="font-weight: bold">산 이름</span> &nbsp; <span style="color : rgb(122, 170, 209); font-weight: bold;">구름산</span>
+                            <p></p>
+                            <span style="font-weight: bold">산 높이</span> &nbsp; <span style="color : rgb(122, 170, 209); font-weight: bold;">240.8m</span>
+                            <p></p>
+                            <span style="font-weight: bold">트랙 위치</span> &nbsp; <span style="color : rgb(122, 170, 209); font-weight: bold;">경기도 광명시</span>
+                            <p></p>
+                            <span style="font-weight: bold">트랙 길이</span> &nbsp; <span style="color : rgb(122, 170, 209); font-weight: bold;">2048m</span>
+                            <p></p>
+                            <span style="font-weight: bold">난이도</span> &nbsp; <span style="color : rgb(122, 170, 209); font-weight: bold;">쉬움</span>
+                        </div>
+                        <p style = "font-weight: bold;">사진</p>
+                        <span class = "koko"><img src = "image\moun5_1.jpg" width = "300px" height = "300px"></span>
+                        <span class = "koko"><img src = "image\moun5_2.jpg" width = "300px" height = "300px"></span>
+                        <span class = "koko"><img src = "image\moun5_3.jpg" width = "300px" height = "300px"></span>
+                    </div>
+                    <a href = "kyunggi.html"><img src = "back.png" style = "width:100px;", style = "height:50px;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href = "main_index.html"><h2>메인페이지로</h2></a>
+        </div>
+    </body>
+</html>
